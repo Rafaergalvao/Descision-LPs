@@ -580,8 +580,30 @@ const translations = {
    APPLY / SWITCH LANGUAGE
 ========================= */
 (function () {
-  const langSelect = document.getElementById('langSelect');
-  if (!langSelect) return;
+  const langSwitch = document.getElementById('langSwitch');
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+  const langFlagActive = document.getElementById('langFlagActive');
+  const langLabelActive = document.getElementById('langLabelActive');
+  if (!langSwitch || !langToggle || !langDropdown) return;
+
+  const langOptions = langDropdown.querySelectorAll('.lang-option');
+
+  // Labels for the toggle button
+  var langLabels = { pt: 'PT', en: 'EN', es: 'ES' };
+
+  // Toggle dropdown open/close
+  langToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    langSwitch.classList.toggle('open');
+  });
+
+  // Close on outside click
+  document.addEventListener('click', function (e) {
+    if (!langSwitch.contains(e.target)) {
+      langSwitch.classList.remove('open');
+    }
+  });
 
   function applyTranslations(lang) {
     const t = translations[lang] || translations['pt'];
@@ -602,14 +624,35 @@ const translations = {
 
   function setLanguage(lang) {
     localStorage.setItem('lang', lang);
-    langSelect.value = lang;
+
+    // Update active state in dropdown
+    langOptions.forEach(function (opt) {
+      opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+    });
+
+    // Update the toggle button flag & label
+    var activeOpt = langDropdown.querySelector('.lang-option[data-lang="' + lang + '"]');
+    if (activeOpt && langFlagActive) {
+      var flagSvg = activeOpt.querySelector('svg');
+      if (flagSvg) {
+        langFlagActive.innerHTML = flagSvg.innerHTML;
+      }
+    }
+    if (langLabelActive) {
+      langLabelActive.textContent = langLabels[lang] || lang.toUpperCase();
+    }
+
     applyTranslations(lang);
   }
 
   const saved = localStorage.getItem('lang') || 'pt';
   setLanguage(saved);
 
-  langSelect.addEventListener('change', function (e) {
-    setLanguage(e.target.value);
+  langOptions.forEach(function (opt) {
+    opt.addEventListener('click', function () {
+      setLanguage(opt.getAttribute('data-lang'));
+      langSwitch.classList.remove('open');
+    });
   });
 })();
+

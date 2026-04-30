@@ -149,8 +149,15 @@ header.scrolled {
   flex-shrink: 0;
 }
 
-/* LANG SELECT */
-.lang-switch select {
+/* LANG SELECT — DROPDOWN */
+.lang-switch {
+  position: relative;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   background: transparent;
   color: #fff;
   border: 1px solid rgba(0, 217, 255, .35);
@@ -158,20 +165,85 @@ header.scrolled {
   border-radius: 10px;
   font-size: 13px;
   font-family: 'Inter', sans-serif;
+  font-weight: 600;
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  transition: border-color .25s;
+  transition: border-color .25s, background .25s;
 }
 
-.lang-switch select:focus {
+.lang-toggle:hover,
+.lang-switch.open .lang-toggle {
   border-color: #00d9ff;
+  background: rgba(0, 217, 255, .06);
 }
 
-.lang-switch option {
-  background: #020611;
+.lang-toggle svg.lang-flag {
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.lang-toggle .lang-arrow {
+  transition: transform .25s;
+  opacity: .6;
+}
+
+.lang-switch.open .lang-arrow {
+  transform: rotate(180deg);
+}
+
+/* DROPDOWN LIST */
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  list-style: none;
+  background: rgba(8, 16, 30, .97);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(0, 217, 255, .2);
+  border-radius: 10px;
+  padding: 6px 0;
+  min-width: 130px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity .2s, transform .2s, visibility .2s;
+  z-index: 100;
+}
+
+.lang-switch.open .lang-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, .75);
+  padding: 8px 14px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+.lang-option svg {
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.lang-option:hover {
+  background: rgba(0, 217, 255, .08);
   color: #fff;
+}
+
+.lang-option.active {
+  color: #00d9ff;
 }
 
 /* =========================

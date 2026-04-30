@@ -66,12 +66,54 @@ index.html
       <div class="nav-right">
 
         <!-- LANG SELECT -->
-        <div class="lang-switch">
-          <select id="langSelect">
-            <option value="pt">PT</option>
-            <option value="en">EN</option>
-            <option value="es">ES</option>
-          </select>
+        <div class="lang-switch" id="langSwitch">
+          <button type="button" class="lang-toggle" id="langToggle">
+            <svg class="lang-flag" id="langFlagActive" viewBox="0 0 640 480" width="22" height="16">
+              <rect width="640" height="480" fill="#009b3a" />
+              <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+              <circle cx="320" cy="240" r="80" fill="#002776" />
+              <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+            </svg>
+            <span id="langLabelActive">PT</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li>
+              <button type="button" class="lang-option active" data-lang="pt">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#009b3a" />
+                  <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+                  <circle cx="320" cy="240" r="80" fill="#002776" />
+                  <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+                </svg>
+                <span>PT-BR</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="en">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#bd3d44" />
+                  <rect y="37" width="640" height="37" fill="#fff" />
+                  <rect y="111" width="640" height="37" fill="#fff" />
+                  <rect y="185" width="640" height="37" fill="#fff" />
+                  <rect y="259" width="640" height="37" fill="#fff" />
+                  <rect y="333" width="640" height="37" fill="#fff" />
+                  <rect y="407" width="640" height="37" fill="#fff" />
+                  <rect width="260" height="260" fill="#192f5d" />
+                </svg>
+                <span>EN</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="es">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#c60b1e" />
+                  <rect y="120" width="640" height="240" fill="#ffc400" />
+                </svg>
+                <span>ES</span>
+              </button>
+            </li>
+          </ul>
         </div>
 
         <!-- HAMBURGER -->
