@@ -3,14 +3,17 @@ index.html
 ========================= -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <link rel="icon" href="assets/fav.png" type="image/png">
   <link rel="shortcut icon" href="assets/fav.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/fav.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DecisionAI OS é a infraestrutura de inteligência de decisão para o sistema financeiro global. Fraude, AML, identidade e risco em tempo real com IA.">
-  <meta name="keywords" content="DecisionAI OS, inteligência artificial, fraude bancária, AML, anti money laundering, fintech, risk engine, prevenção fraude, identidade digital, sistema financeiro">
+  <meta name="description"
+    content="DecisionAI OS é a infraestrutura de inteligência de decisão para o sistema financeiro global. Fraude, AML, identidade e risco em tempo real com IA.">
+  <meta name="keywords"
+    content="DecisionAI OS, inteligência artificial, fraude bancária, AML, anti money laundering, fintech, risk engine, prevenção fraude, identidade digital, sistema financeiro">
   <meta name="author" content="DecisionAI OS">
   <meta name="robots" content="index, follow">
   <meta name="language" content="pt-BR">
@@ -39,426 +42,455 @@ index.html
 
 <body>
 
-<div class="particles"></div>
+  <div class="particles"></div>
 
-<!-- HEADER -->
-<header id="header">
-  <div class="container nav">
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav">
 
-    <!-- LOGO -->
-    <a href="#home" class="logo">
-      <img src="assets/logo.png" alt="DecisionAI OS">
-    </a>
+      <!-- LOGO -->
+      <a href="#home" class="logo">
+        <img src="assets/logo.png" alt="DecisionAI OS">
+      </a>
 
-    <!-- MENU -->
-    <ul class="menu" id="menu">
-      <li><a href="#home" data-i18n="nav.home">Home</a></li>
-      <li><a href="#stats" data-i18n="nav.platform">Plataforma</a></li>
-      <li><a href="#problem" data-i18n="nav.problem">Problema</a></li>
-      <li><a href="#paradigm" data-i18n="nav.architecture">Arquitetura</a></li>
-      <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
-    </ul>
+      <!-- MENU -->
+      <ul class="menu" id="menu">
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#stats" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="#problem" data-i18n="nav.problem">Problema</a></li>
+        <li><a href="#paradigm" data-i18n="nav.architecture">Arquitetura</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+      </ul>
 
-    <!-- DIREITA -->
-    <div class="nav-right">
+      <!-- DIREITA -->
+      <div class="nav-right">
 
-      <!-- LANG SELECT -->
-      <div class="lang-switch">
-        <select id="langSelect">
-          <option value="pt">PT</option>
-          <option value="en">EN</option>
-          <option value="es">ES</option>
-        </select>
-      </div>
+        <!-- LANG SELECT -->
+        <div class="lang-switch">
+          <select id="langSelect">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+          </select>
+        </div>
 
-      <!-- HAMBURGER -->
-      <div class="hamb" id="hamb" aria-label="Menu" role="button" tabindex="0">
-        <span></span>
-        <span></span>
-        <span></span>
+        <!-- HAMBURGER -->
+        <div class="hamb" id="hamb" aria-label="Menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
       </div>
 
     </div>
-
-  </div>
-</header>
+  </header>
 
 
-<!-- HERO -->
-<section class="hero" id="home">
+  <!-- HERO -->
+  <section class="hero" id="home">
 
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
-  <div class="container hero-grid">
+    <div class="container hero-grid">
 
-    <div class="hero-text reveal">
+      <div class="hero-text reveal">
 
-      <span data-i18n="hero.label">Construída para a era da IA</span>
+        <span data-i18n="hero.label">Construída para a era da IA</span>
 
-      <h1 data-i18n="hero.title">DecisionAI OS</h1>
+        <h1 data-i18n="hero.title">DecisionAI OS</h1>
 
-      <h2 data-i18n="hero.subtitle">
-        Infraestrutura de inteligência de decisão
-        para o sistema financeiro global.
-      </h2>
+        <h2 data-i18n="hero.subtitle">
+          Infraestrutura de inteligência de decisão
+          para o sistema financeiro global.
+        </h2>
 
-      <p data-i18n="hero.desc">
-        Fraude, AML, identidade e risco integrados
-        em uma única camada com respostas em tempo real.
-      </p>
-
-      <a href="#paradigm" class="btn" data-i18n="hero.cta">Saiba Mais</a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- STRIP STATS -->
-<section class="stats-strip" id="stats">
-
-  <div class="stats-wrapper">
-
-    <div class="container stats-grid">
-
-      <!-- ITEM 1 -->
-      <div class="stat-item">
-        <img src="assets/icon1.png" alt="Tempo real">
-        <div>
-          <span data-i18n="stats.realtime">Decisões em tempo real</span>
-          <h3>&lt;100ms</h3>
-        </div>
-      </div>
-
-      <!-- ITEM 2 -->
-      <div class="stat-item">
-        <img src="assets/icon2.png" alt="Sinais">
-        <div>
-          <span data-i18n="stats.processed">Sinais processados</span>
-          <h3 data-i18n="stats.processed_val">Milhares</h3>
-        </div>
-      </div>
-
-      <!-- ITEM 3 -->
-      <div class="stat-item">
-        <img src="assets/icon3.png" alt="Instituições">
-        <div>
-          <span data-i18n="stats.global">Instituições financeiras</span>
-          <h3 data-i18n="stats.global_val">Globais</h3>
-        </div>
-      </div>
-
-      <!-- ITEM 4 -->
-      <div class="stat-item">
-        <img src="assets/icon4.png" alt="IA">
-        <div>
-          <span data-i18n="stats.ai">Inteligência</span>
-          <h3 data-i18n="stats.ai_val">Potencializada por IA</h3>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PROBLEM -->
-<section id="problem" class="problem-section section">
-
-  <div class="container">
-
-    <div class="problem-top reveal">
-
-      <span class="mini-title" data-i18n="problem.label">O PROBLEMA ESTRUTURAL</span>
-
-      <h2 data-i18n="problem.title">
-        Sistemas fragmentados.<br>
-        Vulnerabilidades críticas.
-      </h2>
-
-      <p data-i18n="problem.desc">
-        Instituições financeiras operam múltiplos sistemas isolados
-        que não compartilham contexto entre fraude, AML,
-        identidade e risco.
-      </p>
-
-    </div>
-
-    <div class="problem-visual reveal">
-
-      <div class="flow-layout">
-
-        <!-- ESQUERDA -->
-        <div class="flow-col left">
-
-          <div class="flow-item">
-            <img src="assets/img.png" alt="">
-            <span data-i18n="flow.rules">Motores de Regras</span>
-          </div>
-
-          <div class="flow-item">
-            <img src="assets/img.png" alt="">
-            <span data-i18n="flow.aml">Plataformas AML</span>
-          </div>
-
-          <div class="flow-item">
-            <img src="assets/img.png" alt="">
-            <span data-i18n="flow.credit">Bureaus de Crédito</span>
-          </div>
-
-          <div class="flow-item">
-            <img src="assets/img.png" alt="">
-            <span data-i18n="flow.identity">Ferramentas de Identidade</span>
-          </div>
-
-        </div>
-
-        <!-- CENTRO (REDE ANIMADA) -->
-        <div class="flow-center">
-          <canvas id="networkCanvas"></canvas>
-        </div>
-
-        <!-- DIREITA -->
-        <div class="flow-col right">
-
-          <div class="flow-item danger" data-i18n="flow.false">Altos índices de falsos positivos</div>
-          <div class="flow-item danger" data-i18n="flow.ineff">Ineficiências operacionais</div>
-          <div class="flow-item danger" data-i18n="flow.risk">Lacunas de segurança exploradas</div>
-
-        </div>
-
-      </div>
-
-      <div class="problem-footer-box" data-i18n="flow.footer">
-        Sem camada unificada de inteligência de decisão
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PARADIGMA -->
-<section class="paradigm-section" id="paradigm">
-
-  <div class="container">
-
-    <h2 class="paradigm-title" data-i18n="paradigm.title">UM NOVO PARADIGMA</h2>
-
-    <div class="paradigm-content">
-
-      <div class="paradigm-left reveal">
-        <img src="assets/imgp.png" alt="Paradigma DecisionAI">
-      </div>
-
-      <div class="paradigm-right reveal">
-
-        <h3 data-i18n="paradigm.heading">
-          De decisões fragmentadas
-          para inteligência unificada.
-        </h3>
-
-        <p data-i18n="paradigm.desc">
-          A DecisionAI OS introduz uma nova camada unificada
-          de inteligência de decisão que analisa milhares
-          de sinais simultaneamente em tempo real.
+        <p data-i18n="hero.desc">
+          Fraude, AML, identidade e risco integrados
+          em uma única camada com respostas em tempo real.
         </p>
 
-        <a href="#contact" class="paradigm-btn" data-i18n="paradigm.cta">
-          Fale com a gente
+        <a href="#paradigm" class="btn" data-i18n="hero.cta">Saiba Mais</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STRIP STATS -->
+  <section class="stats-strip" id="stats">
+
+    <div class="stats-wrapper">
+
+      <div class="container stats-grid">
+
+        <!-- ITEM 1 -->
+        <div class="stat-item">
+          <img src="assets/icon1.png" alt="Tempo real">
+          <div>
+            <span data-i18n="stats.realtime">Decisões em tempo real</span>
+            <h3>&lt;100ms</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="stat-item">
+          <img src="assets/icon2.png" alt="Sinais">
+          <div>
+            <span data-i18n="stats.processed">Sinais processados</span>
+            <h3 data-i18n="stats.processed_val">Milhares</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="stat-item">
+          <img src="assets/icon3.png" alt="Instituições">
+          <div>
+            <span data-i18n="stats.global">Instituições financeiras</span>
+            <h3 data-i18n="stats.global_val">Globais</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="stat-item">
+          <img src="assets/icon4.png" alt="IA">
+          <div>
+            <span data-i18n="stats.ai">Inteligência</span>
+            <h3 data-i18n="stats.ai_val">Potencializada por IA</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROBLEM -->
+  <section id="problem" class="problem-section section">
+
+    <div class="container">
+
+      <div class="problem-top reveal">
+
+        <span class="mini-title" data-i18n="problem.label">O PROBLEMA ESTRUTURAL</span>
+
+        <h2 data-i18n="problem.title">
+          Sistemas fragmentados.<br>
+          Vulnerabilidades críticas.
+        </h2>
+
+        <p data-i18n="problem.desc">
+          Instituições financeiras operam múltiplos sistemas isolados
+          que não compartilham contexto entre fraude, AML,
+          identidade e risco.
+        </p>
+
+      </div>
+
+      <div class="problem-visual reveal">
+
+        <div class="flow-layout">
+
+          <!-- ESQUERDA -->
+          <div class="flow-col left">
+
+            <div class="flow-item">
+              <img src="assets/img.png" alt="">
+              <span data-i18n="flow.rules">Motores de Regras</span>
+            </div>
+
+            <div class="flow-item">
+              <img src="assets/img.png" alt="">
+              <span data-i18n="flow.aml">Plataformas AML</span>
+            </div>
+
+            <div class="flow-item">
+              <img src="assets/img.png" alt="">
+              <span data-i18n="flow.credit">Bureaus de Crédito</span>
+            </div>
+
+            <div class="flow-item">
+              <img src="assets/img.png" alt="">
+              <span data-i18n="flow.identity">Ferramentas de Identidade</span>
+            </div>
+
+          </div>
+
+          <!-- CENTRO (REDE ANIMADA) -->
+          <div class="flow-center">
+            <canvas id="networkCanvas"></canvas>
+          </div>
+
+          <!-- DIREITA -->
+          <div class="flow-col right">
+
+            <div class="flow-item danger" data-i18n="flow.false">Altos índices de falsos positivos</div>
+            <div class="flow-item danger" data-i18n="flow.ineff">Ineficiências operacionais</div>
+            <div class="flow-item danger" data-i18n="flow.risk">Lacunas de segurança exploradas</div>
+
+          </div>
+
+        </div>
+
+        <div class="problem-footer-box" data-i18n="flow.footer">
+          Sem camada unificada de inteligência de decisão
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PARADIGMA -->
+  <section class="paradigm-section" id="paradigm">
+
+    <div class="container">
+
+      <h2 class="paradigm-title" data-i18n="paradigm.title">UM NOVO PARADIGMA</h2>
+
+      <div class="paradigm-content">
+
+        <div class="paradigm-left reveal">
+          <img src="assets/imgp.png" alt="Paradigma DecisionAI">
+        </div>
+
+        <div class="paradigm-right reveal">
+
+          <h3 data-i18n="paradigm.heading">
+            De decisões fragmentadas
+            para inteligência unificada.
+          </h3>
+
+          <p data-i18n="paradigm.desc">
+            A DecisionAI OS introduz uma nova camada unificada
+            de inteligência de decisão que analisa milhares
+            de sinais simultaneamente em tempo real.
+          </p>
+
+          <a href="#contact" class="paradigm-btn" data-i18n="paradigm.cta">
+            Fale com a gente
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CAPACIDADES -->
+  <section class="cap-section section">
+
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="cap-head reveal">
+
+        <span class="mini-title" data-i18n="cap.label">CAPACIDADES DA PLATAFORMA</span>
+
+        <h2 data-i18n="cap.title">
+          Capacidades integradas.<br>
+          Inteligência que se reforça continuamente.
+        </h2>
+
+      </div>
+
+      <!-- CARDS -->
+      <div class="cap-grid">
+
+        <div class="cap-card reveal">
+          <img src="assets/sec1.png" alt="">
+          <h3 data-i18n="cap.context">Inteligência Contextual</h3>
+          <p data-i18n="cap.context_desc">
+            Analisa múltiplos sinais simultaneamente
+            para aumentar a precisão das decisões.
+          </p>
+        </div>
+
+        <div class="cap-card reveal">
+          <img src="assets/sec2.png" alt="">
+          <h3 data-i18n="cap.device">Inteligência Nativa de Dispositivos</h3>
+          <p data-i18n="cap.device_desc">
+            Coleta digitais e sinais comportamentais
+            diretamente dos ambientes digitais.
+          </p>
+        </div>
+
+        <div class="cap-card reveal">
+          <img src="assets/sec3.png" alt="">
+          <h3 data-i18n="cap.fraud">Fraude e AML</h3>
+          <p data-i18n="cap.fraud_desc">
+            Módulos avançados para detectar crimes
+            financeiros e atividades coordenadas.
+          </p>
+        </div>
+
+        <div class="cap-card reveal">
+          <img src="assets/sec4.png" alt="">
+          <h3 data-i18n="cap.ai">IA Investigativa</h3>
+          <p data-i18n="cap.ai_desc">
+            Explora automaticamente relacionamentos ocultos
+            e descobre redes de fraude.
+          </p>
+        </div>
+
+        <div class="cap-card reveal">
+          <img src="assets/sec5.png" alt="">
+          <h3 data-i18n="cap.market">Marketplace de Inteligência</h3>
+          <p data-i18n="cap.market_desc">
+            Conecta bureaus, provedores de identidade
+            e fontes de dados em um ecossistema aberto.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTATO -->
+  <section id="contact" class="contact-section section">
+
+    <div class="container">
+
+      <div class="contact-head reveal">
+
+        <span class="mini-title" data-i18n="contact.label">CONTATO</span>
+
+        <h2 data-i18n="contact.title">Fale com nossa equipe</h2>
+
+        <p data-i18n="contact.desc">
+          Descubra como a DecisionAI OS pode transformar
+          suas operações com inteligência em tempo real.
+        </p>
+
+      </div>
+
+      <!-- FORMSPREE: troque YOUR_FORM_ID pelo ID que você vai gerar no formspree.io -->
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mjglvvwl" method="POST"
+        novalidate>
+
+        <!-- Campo oculto: identifica a origem do lead -->
+        <input type="hidden" name="_subject" value="Novo contato — DecisionAI OS">
+        <!-- Bloqueia spam bots -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+
+          <div class="input-group" id="group-name">
+            <input type="text" id="fieldName" name="name" required autocomplete="name" placeholder=" ">
+            <label for="fieldName" data-i18n="contact.name">Nome</label>
+            <span class="field-error" id="err-name"></span>
+          </div>
+
+          <div class="input-group" id="group-email">
+            <input type="email" id="fieldEmail" name="email" required autocomplete="email" placeholder=" ">
+            <label for="fieldEmail" data-i18n="contact.email">Email</label>
+            <span class="field-error" id="err-email"></span>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="input-group" id="group-company">
+            <input type="text" id="fieldCompany" name="company" required autocomplete="organization" placeholder=" ">
+            <label for="fieldCompany" data-i18n="contact.company">Empresa</label>
+            <span class="field-error" id="err-company"></span>
+          </div>
+
+          <div class="input-group" id="group-phone">
+            <input type="tel" id="fieldPhone" name="phone" autocomplete="tel" placeholder=" ">
+            <label for="fieldPhone" data-i18n="contact.phone">Telefone</label>
+          </div>
+
+        </div>
+
+        <div class="input-group" id="group-message">
+          <textarea id="fieldMessage" name="message" rows="4" required placeholder=" "></textarea>
+          <label for="fieldMessage" data-i18n="contact.message">Mensagem</label>
+          <span class="field-error" id="err-message"></span>
+        </div>
+
+        <button type="submit" class="contact-btn" id="submitBtn">
+          <span class="btn-text" data-i18n="contact.cta">Enviar mensagem</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+
+        <!-- Feedback de resultado -->
+        <div class="form-result" id="formResult" role="alert" aria-live="polite"></div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-social">
+
+      <p data-i18n="footer.social">Nos siga também nas redes sociais</p>
+
+      <div class="social-icons">
+
+        <a href="#" target="_blank" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+          </svg>
+        </a>
+
+        <a href="#" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+
+        <a href="#" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </a>
+
+        <a href="#" target="_blank" aria-label="Twitter / X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
         </a>
 
       </div>
 
     </div>
 
-  </div>
+    <div class="container foot">
 
-</section>
+      <img src="assets/logob.png" alt="DecisionAI OS">
 
-
-<!-- CAPACIDADES -->
-<section class="cap-section section">
-
-  <div class="container">
-
-    <!-- HEADER -->
-    <div class="cap-head reveal">
-
-      <span class="mini-title" data-i18n="cap.label">CAPACIDADES DA PLATAFORMA</span>
-
-      <h2 data-i18n="cap.title">
-        Capacidades integradas.<br>
-        Inteligência que se reforça continuamente.
-      </h2>
+      <p data-i18n="footer.copy">© 2026 DecisionAI OS</p>
 
     </div>
 
-    <!-- CARDS -->
-    <div class="cap-grid">
-
-      <div class="cap-card reveal">
-        <img src="assets/sec1.png" alt="">
-        <h3 data-i18n="cap.context">Inteligência Contextual</h3>
-        <p data-i18n="cap.context_desc">
-          Analisa múltiplos sinais simultaneamente
-          para aumentar a precisão das decisões.
-        </p>
-      </div>
-
-      <div class="cap-card reveal">
-        <img src="assets/sec2.png" alt="">
-        <h3 data-i18n="cap.device">Inteligência Nativa de Dispositivos</h3>
-        <p data-i18n="cap.device_desc">
-          Coleta digitais e sinais comportamentais
-          diretamente dos ambientes digitais.
-        </p>
-      </div>
-
-      <div class="cap-card reveal">
-        <img src="assets/sec3.png" alt="">
-        <h3 data-i18n="cap.fraud">Fraude e AML</h3>
-        <p data-i18n="cap.fraud_desc">
-          Módulos avançados para detectar crimes
-          financeiros e atividades coordenadas.
-        </p>
-      </div>
-
-      <div class="cap-card reveal">
-        <img src="assets/sec4.png" alt="">
-        <h3 data-i18n="cap.ai">IA Investigativa</h3>
-        <p data-i18n="cap.ai_desc">
-          Explora automaticamente relacionamentos ocultos
-          e descobre redes de fraude.
-        </p>
-      </div>
-
-      <div class="cap-card reveal">
-        <img src="assets/sec5.png" alt="">
-        <h3 data-i18n="cap.market">Marketplace de Inteligência</h3>
-        <p data-i18n="cap.market_desc">
-          Conecta bureaus, provedores de identidade
-          e fontes de dados em um ecossistema aberto.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+  </footer>
 
 
-<!-- CONTATO -->
-<section id="contact" class="contact-section section">
-
-  <div class="container">
-
-    <div class="contact-head reveal">
-
-      <span class="mini-title" data-i18n="contact.label">CONTATO</span>
-
-      <h2 data-i18n="contact.title">Fale com nossa equipe</h2>
-
-      <p data-i18n="contact.desc">
-        Descubra como a DecisionAI OS pode transformar
-        suas operações com inteligência em tempo real.
-      </p>
-
-    </div>
-
-    <form class="contact-form reveal" id="contactForm" novalidate>
-
-      <div class="form-row">
-
-        <div class="input-group">
-          <input type="text" id="fieldName" required autocomplete="name">
-          <label for="fieldName" data-i18n="contact.name">Nome</label>
-        </div>
-
-        <div class="input-group">
-          <input type="email" id="fieldEmail" required autocomplete="email">
-          <label for="fieldEmail" data-i18n="contact.email">Email</label>
-        </div>
-
-      </div>
-
-      <div class="form-row">
-
-        <div class="input-group">
-          <input type="text" id="fieldCompany" required autocomplete="organization">
-          <label for="fieldCompany" data-i18n="contact.company">Empresa</label>
-        </div>
-
-        <div class="input-group">
-          <input type="tel" id="fieldPhone" autocomplete="tel">
-          <label for="fieldPhone" data-i18n="contact.phone">Telefone</label>
-        </div>
-
-      </div>
-
-      <div class="input-group">
-        <textarea id="fieldMessage" rows="4" required></textarea>
-        <label for="fieldMessage" data-i18n="contact.message">Mensagem</label>
-      </div>
-
-      <button type="submit" class="contact-btn" id="submitBtn">
-        <span data-i18n="contact.cta">Enviar mensagem</span>
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-  <div class="footer-social">
-
-    <p data-i18n="footer.social">Nos siga também nas redes sociais</p>
-
-    <div class="social-icons">
-
-      <a href="#" target="_blank" aria-label="Facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-      </a>
-
-      <a href="#" target="_blank" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-
-      <a href="#" target="_blank" aria-label="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </a>
-
-      <a href="#" target="_blank" aria-label="Twitter / X">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="container foot">
-
-    <img src="assets/logob.png" alt="DecisionAI OS">
-
-    <p data-i18n="footer.copy">© 2026 DecisionAI OS</p>
-
-  </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

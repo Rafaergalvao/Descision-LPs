@@ -211,47 +211,163 @@
 })();
 
 /* =========================
-   CONTACT FORM UX
+   CONTACT FORM — FORMSPREE
 ========================= */
 (function () {
   const form = document.getElementById('contactForm');
   const btn = document.getElementById('submitBtn');
-  if (!form || !btn) return;
+  const result = document.getElementById('formResult');
+  if (!form || !btn || !result) return;
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  // ── Validation rules ─────────────────────────────────────────
+  const rules = [
+    {
+      id: 'fieldName',
+      errId: 'err-name',
+      groupId: 'group-name',
+      validate: function (v) { return v.trim().length >= 2; },
+      messages: { pt: 'Informe seu nome completo.', en: 'Please enter your full name.', es: 'Ingrese su nombre completo.' }
+    },
+    {
+      id: 'fieldEmail',
+      errId: 'err-email',
+      groupId: 'group-email',
+      validate: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); },
+      messages: { pt: 'Informe um email válido.', en: 'Please enter a valid email.', es: 'Ingrese un email válido.' }
+    },
+    {
+      id: 'fieldCompany',
+      errId: 'err-company',
+      groupId: 'group-company',
+      validate: function (v) { return v.trim().length >= 2; },
+      messages: { pt: 'Informe o nome da empresa.', en: 'Please enter your company name.', es: 'Ingrese el nombre de su empresa.' }
+    },
+    {
+      id: 'fieldMessage',
+      errId: 'err-message',
+      groupId: 'group-message',
+      validate: function (v) { return v.trim().length >= 10; },
+      messages: { pt: 'Escreva uma mensagem com pelo menos 10 caracteres.', en: 'Write a message with at least 10 characters.', es: 'Escriba un mensaje con al menos 10 caracteres.' }
+    }
+  ];
 
-    // Basic validation feedback
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    let valid = true;
+  // ── Clear field error ─────────────────────────────────────────
+  function clearError(rule) {
+    var group = document.getElementById(rule.groupId);
+    var errEl = document.getElementById(rule.errId);
+    if (group) group.classList.remove('has-error');
+    if (errEl) errEl.textContent = '';
+  }
 
-    inputs.forEach(function (input) {
-      if (!input.value.trim()) {
+  // ── Show field error ──────────────────────────────────────────
+  function showError(rule, lang) {
+    var group = document.getElementById(rule.groupId);
+    var errEl = document.getElementById(rule.errId);
+    var input = document.getElementById(rule.id);
+    if (group) group.classList.add('has-error');
+    if (errEl) errEl.textContent = rule.messages[lang] || rule.messages['pt'];
+    if (input) input.focus();
+  }
+
+  // ── Validate all fields ───────────────────────────────────────
+  function validateAll(lang) {
+    var valid = true;
+    rules.forEach(function (rule) {
+      clearError(rule);
+      var input = document.getElementById(rule.id);
+      if (!input) return;
+      if (!rule.validate(input.value)) {
+        if (valid) showError(rule, lang); // focus first error only
+        else {
+          var group = document.getElementById(rule.groupId);
+          var errEl = document.getElementById(rule.errId);
+          if (group) group.classList.add('has-error');
+          if (errEl) errEl.textContent = rule.messages[lang] || rule.messages['pt'];
+        }
         valid = false;
-        input.style.borderColor = 'rgba(255,80,80,.6)';
-        setTimeout(function () {
-          input.style.borderColor = '';
-        }, 2000);
       }
     });
+    return valid;
+  }
 
-    if (!valid) return;
+  // ── Live clear on input ───────────────────────────────────────
+  rules.forEach(function (rule) {
+    var input = document.getElementById(rule.id);
+    if (!input) return;
+    input.addEventListener('input', function () { clearError(rule); });
+  });
 
-    btn.classList.add('loading');
+  // ── Result banner helpers ─────────────────────────────────────
+  var SUCCESS_ICON = '<svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>';
+  var ERROR_ICON = '<svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>';
 
-    setTimeout(function () {
-      btn.classList.remove('loading');
-      btn.querySelector('span').textContent = 'Mensagem enviada ✓';
-      btn.style.borderColor = '#00d9ff';
-      btn.style.color = '#00d9ff';
+  var RESULT_MSGS = {
+    success: {
+      pt: 'Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.',
+      en: 'Message sent successfully! Our team will get back to you shortly.',
+      es: '¡Mensaje enviado con éxito! Nuestro equipo se pondrá en contacto pronto.'
+    },
+    error: {
+      pt: 'Ops, algo deu errado. Tente novamente ou nos contate diretamente por email.',
+      en: 'Something went wrong. Please try again or contact us directly by email.',
+      es: 'Algo salió mal. Inténtelo de nuevo o contáctenos directamente por correo.'
+    }
+  };
 
-      setTimeout(function () {
-        btn.querySelector('span').setAttribute('data-i18n', 'contact.cta');
-        btn.querySelector('span').textContent = 'Enviar mensagem';
-        btn.style.borderColor = '';
-        btn.style.color = '';
-      }, 4000);
-    }, 1600);
+  function showResult(type, lang) {
+    result.className = 'form-result ' + type;
+    var icon = type === 'success' ? SUCCESS_ICON : ERROR_ICON;
+    result.innerHTML = icon + '<span>' + (RESULT_MSGS[type][lang] || RESULT_MSGS[type]['pt']) + '</span>';
+    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function hideResult() {
+    result.className = 'form-result';
+    result.innerHTML = '';
+  }
+
+  // ── Set button state ──────────────────────────────────────────
+  function setLoading(on) {
+    btn.disabled = on;
+    btn.classList.toggle('loading', on);
+  }
+
+  // ── Submit ────────────────────────────────────────────────────
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    hideResult();
+
+    var lang = document.documentElement.lang || 'pt';
+    if (!validateAll(lang)) return;
+
+    setLoading(true);
+
+    var data = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(function (response) {
+        setLoading(false);
+        if (response.ok) {
+          showResult('success', lang);
+          form.reset();
+          // Clear any lingering float-label states
+          rules.forEach(function (rule) { clearError(rule); });
+        } else {
+          response.json().then(function (data) {
+            showResult('error', lang);
+          }).catch(function () {
+            showResult('error', lang);
+          });
+        }
+      })
+      .catch(function () {
+        setLoading(false);
+        showResult('error', lang);
+      });
   });
 })();
 
