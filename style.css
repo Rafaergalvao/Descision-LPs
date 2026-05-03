@@ -1047,6 +1047,11 @@ footer {
     display: flex;
   }
 
+  .hero {
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+
   .menu {
     position: fixed;
     top: 76px;
@@ -1115,8 +1120,8 @@ footer {
   }
 
   .hero {
-    padding-top: 90px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 60px;
     min-height: auto;
   }
 
@@ -2328,6 +2333,9 @@ footer {
     order: -1;
     margin-bottom: 40px;
   }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
   .split-section {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2357,5 +2365,8 @@ footer {
   }
   .benefits-grid {
     grid-template-columns: 1fr;
+  }
+  .hero-image {
+    display: none;
   }
 }
