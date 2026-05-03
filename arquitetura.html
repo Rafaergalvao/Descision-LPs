@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="icon" href="assets/fav.png" type="image/png">
+  <link rel="shortcut icon" href="assets/fav.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/fav.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arquitetura DecisionAI OS - Execução de decisões em tempo real.">
+  <title>Arquitetura | DecisionAI OS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="particles"></div>
+
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DecisionAI OS">
+      </a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+        <li><a href="arquitetura.html" class="active" data-i18n="nav.architecture">Arquitetura</a></li>
+        <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+        <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn-small" data-i18n="nav.demo">Solicitar demonstração →</a>
+        
+        <!-- LANG SELECT -->
+        <div class="lang-switch" id="langSwitch">
+          <button type="button" class="lang-toggle" id="langToggle">
+            <svg class="lang-flag" id="langFlagActive" viewBox="0 0 640 480" width="22" height="16">
+              <rect width="640" height="480" fill="#009b3a" />
+              <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+              <circle cx="320" cy="240" r="80" fill="#002776" />
+              <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+            </svg>
+            <span id="langLabelActive">PT</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li>
+              <button type="button" class="lang-option active" data-lang="pt">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#009b3a" />
+                  <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+                  <circle cx="320" cy="240" r="80" fill="#002776" />
+                  <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+                </svg>
+                <span>PT-BR</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="en">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#bd3d44" />
+                  <rect y="37" width="640" height="37" fill="#fff" />
+                  <rect y="111" width="640" height="37" fill="#fff" />
+                  <rect y="185" width="640" height="37" fill="#fff" />
+                  <rect y="259" width="640" height="37" fill="#fff" />
+                  <rect y="333" width="640" height="37" fill="#fff" />
+                  <rect y="407" width="640" height="37" fill="#fff" />
+                  <rect width="260" height="260" fill="#192f5d" />
+                </svg>
+                <span>EN</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="es">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#c60b1e" />
+                  <rect y="120" width="640" height="240" fill="#ffc400" />
+                </svg>
+                <span>ES</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamb" id="hamb" aria-label="Menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-hero section">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1 data-i18n="arq.hero_title">Como a DecisionAI OS executa decisões inteligentes em tempo real.</h1>
+        <p data-i18n="arq.hero_desc">Nossa arquitetura foi projetada para processar milhares de sinais, orquestrar regras e modelos de IA e entregar a decisão ideal em menos de 100ms, com máxima escalabilidade e segurança.</p>
+        <div class="hero-btns">
+          <a href="index.html#contact" class="btn" data-i18n="nav.demo">Solicitar demonstração →</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="hero-svg-container">
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="100" y="100" width="300" height="50" rx="10" stroke="#00d9ff" stroke-width="3" class="svg-glow"/>
+            <rect x="100" y="180" width="300" height="50" rx="10" stroke="#0c7bf4" stroke-width="3" class="svg-glow"/>
+            <rect x="100" y="260" width="300" height="50" rx="10" stroke="#06effe" stroke-width="3" class="svg-glow"/>
+            <rect x="100" y="340" width="300" height="50" rx="10" stroke="#00d9ff" stroke-width="3" class="svg-glow"/>
+            <circle cx="250" cy="150" r="4" fill="#0c7bf4">
+              <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="250" cy="230" r="4" fill="#06effe">
+              <animate attributeName="opacity" values="1;0;1" dur="2s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="250" cy="310" r="4" fill="#00d9ff">
+              <animate attributeName="opacity" values="1;0;1" dur="2s" begin="1s" repeatCount="indefinite" />
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGRAMA DE ARQUITETURA -->
+  <section class="section" style="padding-top: 60px; padding-bottom: 20px;">
+    <div class="container">
+      <div class="section-head reveal" style="margin-bottom: 40px;">
+        <span class="mini-title" data-i18n="arq.diag_title" style="margin-bottom: 0;">VISÃO GERAL DA ARQUITETURA</span>
+      </div>
+
+      <div class="arch-diagram reveal">
+        
+        <!-- COLUNA 1 -->
+        <div class="arch-col">
+          <div class="arch-box">
+            <div class="arch-box-title" data-i18n="arq.diag_col1_title">FONTES DE SINAIS E DADOS</div>
+            <div class="arch-list">
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                <span data-i18n="arq.diag_col1_1">Sinais Mobile</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                <span data-i18n="arq.diag_col1_2">Sinais do Navegador</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"></path><path d="M12 18v4"></path><path d="M6 10h12"></path><path d="M12 10v8"></path><path d="M10 20h4"></path><path d="M10 4h4"></path></svg>
+                <span data-i18n="arq.diag_col1_3">APIs e Conectores (Bureaus, SPC, etc.)</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                <span data-i18n="arq.diag_col1_4">Dados Internos</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
+                <span data-i18n="arq.diag_col1_5">Modelos de IA e Algoritmos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+
+        <!-- COLUNA 2 -->
+        <div class="arch-col-center">
+          <div class="arch-box-large">
+            <div class="arch-box-title" data-i18n="arq.diag_col2_title">ORQUESTRADOR DE DECISÕES (NO-CODE)</div>
+            <div class="arch-grid-horizontal">
+              <div class="arch-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="3" width="8" height="6" rx="1"></rect><path d="M12 9v4"></path><path d="M6 15v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path><rect x="4" y="15" width="6" height="6" rx="1"></rect><rect x="14" y="15" width="6" height="6" rx="1"></rect></svg>
+                <span data-i18n="arq.diag_col2_1">Fluxos de Decisão</span>
+              </div>
+              <div class="arch-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span data-i18n="arq.diag_col2_2">Regras de Negócio</span>
+              </div>
+              <div class="arch-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 2.5 2.5 0 0 1-.28-4.16 2.5 2.5 0 0 1 1.7-4.18A2.5 2.5 0 0 1 9.5 2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 2.5 2.5 0 0 0 .28-4.16 2.5 2.5 0 0 0-1.7-4.18 2.5 2.5 0 0 0-4-6.52z"></path></svg>
+                <span data-i18n="arq.diag_col2_3">Modelos de IA</span>
+              </div>
+              <div class="arch-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                <span data-i18n="arq.diag_col2_4">Políticas e Estratégias</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="arch-arrow-down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </div>
+
+          <div class="arch-box-engine">
+            <div style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); color: #00d9ff; background: #08101d; padding: 0 10px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <div class="arch-box-engine-title" data-i18n="arq.diag_col2_engine_title">MOTOR DE DECISÃO EM TEMPO REAL</div>
+            <div class="arch-box-engine-subtitle" data-i18n="arq.diag_col2_engine_sub">&lt; 100ms</div>
+          </div>
+        </div>
+
+        <div class="arch-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+
+        <!-- COLUNA 3 -->
+        <div class="arch-col">
+          <div class="arch-box">
+            <div class="arch-box-title" data-i18n="arq.diag_col3_title">AÇÕES / RESULTADOS</div>
+            <div class="arch-list">
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                <span data-i18n="arq.diag_col3_1">Bloquear</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffa502" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span data-i18n="arq.diag_col3_2">Revisar / MFA</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2ed573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span data-i18n="arq.diag_col3_3">Aprovar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+
+        <!-- COLUNA 4 -->
+        <div class="arch-col">
+          <div class="arch-box">
+            <div class="arch-box-title" data-i18n="arq.diag_col4_title">MÓDULOS DE PLATAFORMA</div>
+            <div class="arch-list">
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                <span data-i18n="arq.diag_col4_1">Monitoramento em Tempo Real</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span data-i18n="arq.diag_col4_2">Gestão de Casos</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><circle cx="12" cy="11" r="3"></circle></svg>
+                <span data-i18n="arq.diag_col4_3">Auditoria e Governança</span>
+              </div>
+              <div class="arch-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                <span data-i18n="arq.diag_col4_4">Relatórios e Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="mini-title" data-i18n="arq.layer_label">CAMADA POR CAMADA</span>
+        <h2 data-i18n="arq.layer_title">Uma estrutura modular para máxima flexibilidade e performance.</h2>
+      </div>
+
+      <div class="layers-horizontal">
+        <div class="layer-item-h reveal">
+          <span class="layer-num-h">01</span>
+          <div class="layer-content-h">
+            <h3 data-i18n="arq.l1_title">FONTES DE SINAIS E DADOS</h3>
+            <p data-i18n="arq.l1_desc">Coleta sinais de múltiplas fontes em tempo real: dispositivos, navegadores, transações, bureaus, parceiros e dados internos.</p>
+          </div>
+        </div>
+        <div class="layer-item-h reveal">
+          <span class="layer-num-h">02</span>
+          <div class="layer-content-h">
+            <h3 data-i18n="arq.l2_title">ORQUESTRADOR DE DECISÕES (NO-CODE)</h3>
+            <p data-i18n="arq.l2_desc">Permite criar, testar e versionar fluxos de decisão complexos com regras, políticas e modelos de IA de forma visual.</p>
+          </div>
+        </div>
+        <div class="layer-item-h reveal">
+          <span class="layer-num-h">03</span>
+          <div class="layer-content-h">
+            <h3 data-i18n="arq.l3_title">MOTOR DE DECISÃO EM TEMPO REAL</h3>
+            <p data-i18n="arq.l3_desc">Executa milhões de combinações de sinais, regras e modelos em milissegundos para identificar o melhor resultado.</p>
+          </div>
+        </div>
+        <div class="layer-item-h reveal">
+          <span class="layer-num-h">04</span>
+          <div class="layer-content-h">
+            <h3 data-i18n="arq.l4_title">AÇÕES / RESULTADOS</h3>
+            <p data-i18n="arq.l4_desc">Decisões acionáveis entregues aos sistemas de origem para bloquear, revisar ou aprovar automaticamente.</p>
+          </div>
+        </div>
+        <div class="layer-item-h reveal">
+          <span class="layer-num-h">05</span>
+          <div class="layer-content-h">
+            <h3 data-i18n="arq.l5_title">MÓDULOS DE PLATAFORMA</h3>
+            <p data-i18n="arq.l5_desc">Camadas de suporte que garantem monitoramento, governança, auditoria, analytics e melhoria contínua da decisão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="iso-section">
+    <div class="container">
+      <div class="iso-stack-wrapper reveal">
+        
+        <div class="iso-layer-group">
+          <div class="iso-plate"></div>
+          <div class="iso-label">
+            <span class="iso-line"></span>
+            <div class="iso-text">
+              <span class="iso-num">1.</span>
+              <span data-i18n="arq.iso_1">FONTES DE SINAIS E DADOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="iso-layer-group">
+          <div class="iso-plate"></div>
+          <div class="iso-label">
+            <span class="iso-line"></span>
+            <div class="iso-text">
+              <span class="iso-num">2.</span>
+              <span data-i18n="arq.iso_2">ORQUESTRADOR DE DECISÕES</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="iso-layer-group">
+          <div class="iso-plate"></div>
+          <div class="iso-label">
+            <span class="iso-line"></span>
+            <div class="iso-text">
+              <span class="iso-num">3.</span>
+              <span data-i18n="arq.iso_3">MOTOR DE DECISÃO EM TEMPO REAL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="iso-layer-group">
+          <div class="iso-plate"></div>
+          <div class="iso-label">
+            <span class="iso-line"></span>
+            <div class="iso-text">
+              <span class="iso-num">4.</span>
+              <span data-i18n="arq.iso_4">AÇÕES / RESULTADOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="iso-layer-group">
+          <div class="iso-plate"></div>
+          <div class="iso-label">
+            <span class="iso-line"></span>
+            <div class="iso-text">
+              <span class="iso-num">5.</span>
+              <span data-i18n="arq.iso_5">MÓDULOS DE PLATAFORMA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logob.png" alt="DecisionAI OS">
+        <p data-i18n="footer.copy">© 2026 DecisionAI OS. Todos os direitos reservados.</p>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.nav_title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+          <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+          <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+          <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+          <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.social_title">Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter / X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

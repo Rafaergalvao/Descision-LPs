@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="icon" href="assets/fav.png" type="image/png">
+  <link rel="shortcut icon" href="assets/fav.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/fav.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Capacidades DecisionAI OS - Módulos inteligentes de decisão.">
+  <title>Capacidades | DecisionAI OS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="particles"></div>
+
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DecisionAI OS">
+      </a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="capacidades.html" class="active" data-i18n="nav.capabilities">Capacidades</a></li>
+        <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+        <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+        <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn-small" data-i18n="nav.demo">Solicitar demonstração →</a>
+        
+        <!-- LANG SELECT -->
+        <div class="lang-switch" id="langSwitch">
+          <button type="button" class="lang-toggle" id="langToggle">
+            <svg class="lang-flag" id="langFlagActive" viewBox="0 0 640 480" width="22" height="16">
+              <rect width="640" height="480" fill="#009b3a" />
+              <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+              <circle cx="320" cy="240" r="80" fill="#002776" />
+              <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+            </svg>
+            <span id="langLabelActive">PT</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li>
+              <button type="button" class="lang-option active" data-lang="pt">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#009b3a" />
+                  <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+                  <circle cx="320" cy="240" r="80" fill="#002776" />
+                  <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+                </svg>
+                <span>PT-BR</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="en">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#bd3d44" />
+                  <rect y="37" width="640" height="37" fill="#fff" />
+                  <rect y="111" width="640" height="37" fill="#fff" />
+                  <rect y="185" width="640" height="37" fill="#fff" />
+                  <rect y="259" width="640" height="37" fill="#fff" />
+                  <rect y="333" width="640" height="37" fill="#fff" />
+                  <rect y="407" width="640" height="37" fill="#fff" />
+                  <rect width="260" height="260" fill="#192f5d" />
+                </svg>
+                <span>EN</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="es">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#c60b1e" />
+                  <rect y="120" width="640" height="240" fill="#ffc400" />
+                </svg>
+                <span>ES</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamb" id="hamb" aria-label="Menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-hero section">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1 data-i18n="cap_p.hero_title">Módulos inteligentes que trabalham juntos e evoluem com sua instituição.</h1>
+        <p data-i18n="cap_p.hero_desc">A DecisionAI OS integra capacidades avançadas que analisam milhares de sinais em tempo real, combinando dados, modelos e inteligência contextual para entregar decisões mais precisas, seguras e escaláveis.</p>
+        <div class="hero-btns">
+          <a href="index.html#contact" class="btn" data-i18n="nav.demo">Solicitar demonstração →</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="hero-svg-container">
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="150" y="150" width="80" height="80" rx="10" stroke="#00d9ff" stroke-width="3" class="svg-glow"/>
+            <rect x="270" y="150" width="80" height="80" rx="10" stroke="#0c7bf4" stroke-width="3" class="svg-glow"/>
+            <rect x="150" y="270" width="80" height="80" rx="10" stroke="#06effe" stroke-width="3" class="svg-glow"/>
+            <rect x="270" y="270" width="80" height="80" rx="10" stroke="#00d9ff" stroke-width="3" class="svg-glow"/>
+            <line x1="230" y1="190" x2="270" y2="190" stroke="#fff" stroke-opacity="0.3" stroke-width="2"/>
+            <line x1="190" y1="230" x2="190" y2="270" stroke="#fff" stroke-opacity="0.3" stroke-width="2"/>
+            <circle cx="250" cy="250" r="4" fill="#fff">
+              <animate attributeName="cy" values="250;230;250" dur="3s" repeatCount="indefinite" />
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="mini-title" data-i18n="cap_p.main_label">NOSSAS CAPACIDADES PRINCIPAIS</span>
+        <h2 data-i18n="cap_p.main_title">Módulos especializados que se complementam para entregar inteligência de decisão de ponta a ponta.</h2>
+      </div>
+
+      <div class="grid-2">
+        <!-- Módulo 1 -->
+        <div class="cap-detail-card reveal">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <div class="cap-info">
+            <h3 data-i18n="cap_p.m1_title">Fraude e AML</h3>
+            <p data-i18n="cap_p.m1_desc">Módulos avançados para detectar, prevenir e responder a atividades fraudulentas e de lavagem de dinheiro em tempo real.</p>
+            <ul>
+              <li data-i18n="cap_p.m1_l1">Detecção de fraude transacional</li>
+              <li data-i18n="cap_p.m1_l2">Compliance AML completo</li>
+              <li data-i18n="cap_p.m1_l3">Monitoramento contínuo</li>
+              <li data-i18n="cap_p.m1_l4">Triagem e alertas inteligentes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Módulo 2 -->
+        <div class="cap-detail-card reveal">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line></svg>
+          </div>
+          <div class="cap-info">
+            <h3 data-i18n="cap_p.m2_title">Detecção de Money Mule</h3>
+            <p data-i18n="cap_p.m2_desc">Identifica e interrompe redes de mulas financeiras e esquemas de movimentação ilícita com análise comportamental e de rede.</p>
+            <ul>
+              <li data-i18n="cap_p.m2_l1">Identificação de padrões de rede</li>
+              <li data-i18n="cap_p.m2_l2">Análise de fluxo e movimentações</li>
+              <li data-i18n="cap_p.m2_l3">Relacionamento entre contas e dispositivos</li>
+              <li data-i18n="cap_p.m2_l4">Pontuação de risco dinâmica</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Módulo 3 -->
+        <div class="cap-detail-card reveal">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          <div class="cap-info">
+            <h3 data-i18n="cap_p.m3_title">IA Investigativa</h3>
+            <p data-i18n="cap_p.m3_desc">Explora relações ocultas e descobre redes de fraude complexas com IA e grafos de inteligência.</p>
+            <ul>
+              <li data-i18n="cap_p.m3_l1">Descoberta de redes e clusters</li>
+              <li data-i18n="cap_p.m3_l2">Correlação de entidades e eventos</li>
+              <li data-i18n="cap_p.m3_l3">Anomalias e comportamentos atípicos</li>
+              <li data-i18n="cap_p.m3_l4">Apoio completo à investigação</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Módulo 4 -->
+        <div class="cap-detail-card reveal">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          </div>
+          <div class="cap-info">
+            <h3 data-i18n="cap_p.m4_title">Inteligência Contextual</h3>
+            <p data-i18n="cap_p.m4_desc">Analisa múltiplos sinais simultaneamente para entender o contexto real por trás de cada interação ou transação.</p>
+            <ul>
+              <li data-i18n="cap_p.m4_l1">Comportamento do usuário</li>
+              <li data-i18n="cap_p.m4_l2">Inteligência de dispositivo e sessão</li>
+              <li data-i18n="cap_p.m4_l3">Dados transacionais e biométricos</li>
+              <li data-i18n="cap_p.m4_l4">Score de confiança contextual</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Módulo 5 -->
+        <div class="cap-detail-card reveal" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+          </div>
+          <div class="cap-info">
+            <h3 data-i18n="cap_p.m5_title">Marketplace de Inteligência</h3>
+            <p data-i18n="cap_p.m5_desc">Conecta sua instituição a um ecossistema aberto de dados, provedores e serviços de inteligência.</p>
+            <ul>
+              <li data-i18n="cap_p.m5_l1">Bureaus e fontes de dados alternativas</li>
+              <li data-i18n="cap_p.m5_l2">Provedores de identidade e biometria</li>
+              <li data-i18n="cap_p.m5_l3">Modelos e algoritmos do ecossistema</li>
+              <li data-i18n="cap_p.m5_l4">APIs e integrações plug-and-play</li>
+            </ul>
+            <a href="index.html#contact" class="link-arrow" data-i18n="nav.demo">Solicitar demonstração →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logob.png" alt="DecisionAI OS">
+        <p data-i18n="footer.copy">© 2026 DecisionAI OS. Todos os direitos reservados.</p>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.nav_title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+          <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+          <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+          <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+          <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.social_title">Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter / X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

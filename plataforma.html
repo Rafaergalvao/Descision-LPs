@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="icon" href="assets/fav.png" type="image/png">
+  <link rel="shortcut icon" href="assets/fav.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/fav.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma DecisionAI OS - Orquestração de decisões em tempo real.">
+  <title>Plataforma | DecisionAI OS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="particles"></div>
+
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DecisionAI OS">
+      </a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="plataforma.html" class="active" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+        <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+        <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+        <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn-small" data-i18n="nav.demo">Solicitar demonstração →</a>
+        
+        <!-- LANG SELECT -->
+        <div class="lang-switch" id="langSwitch">
+          <button type="button" class="lang-toggle" id="langToggle">
+            <svg class="lang-flag" id="langFlagActive" viewBox="0 0 640 480" width="22" height="16">
+              <rect width="640" height="480" fill="#009b3a" />
+              <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+              <circle cx="320" cy="240" r="80" fill="#002776" />
+              <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+            </svg>
+            <span id="langLabelActive">PT</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li>
+              <button type="button" class="lang-option active" data-lang="pt">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#009b3a" />
+                  <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+                  <circle cx="320" cy="240" r="80" fill="#002776" />
+                  <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+                </svg>
+                <span>PT-BR</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="en">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#bd3d44" />
+                  <rect y="37" width="640" height="37" fill="#fff" />
+                  <rect y="111" width="640" height="37" fill="#fff" />
+                  <rect y="185" width="640" height="37" fill="#fff" />
+                  <rect y="259" width="640" height="37" fill="#fff" />
+                  <rect y="333" width="640" height="37" fill="#fff" />
+                  <rect y="407" width="640" height="37" fill="#fff" />
+                  <rect width="260" height="260" fill="#192f5d" />
+                </svg>
+                <span>EN</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="es">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#c60b1e" />
+                  <rect y="120" width="640" height="240" fill="#ffc400" />
+                </svg>
+                <span>ES</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamb" id="hamb" aria-label="Menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-hero section">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1 data-i18n="plat.hero_title">Orquestre decisões financeiras em tempo real.</h1>
+        <p data-i18n="plat.hero_desc">A DecisionAI OS é a infraestrutura central de decisão que combina dados, APIs e modelos de IA para transformar sinais em decisões inteligentes em menos de 100 milissegundos.</p>
+        <div class="hero-btns">
+          <a href="index.html#contact" class="btn" data-i18n="nav.demo">Solicitar demonstração →</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="hero-svg-container">
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="200" y="200" width="100" height="100" rx="15" stroke="#00d9ff" stroke-width="4" class="svg-glow">
+              <animate attributeName="stroke-opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <path d="M100 100L200 200" stroke="#0c7bf4" stroke-width="3" stroke-dasharray="5 5">
+              <animate attributeName="stroke-dashoffset" from="10" to="0" dur="2s" repeatCount="indefinite" />
+            </path>
+            <path d="M400 100L300 200" stroke="#0c7bf4" stroke-width="3" stroke-dasharray="5 5">
+              <animate attributeName="stroke-dashoffset" from="10" to="0" dur="2s" repeatCount="indefinite" />
+            </path>
+            <path d="M100 400L200 300" stroke="#06effe" stroke-width="3" stroke-dasharray="5 5">
+              <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite" />
+            </path>
+            <path d="M400 400L300 300" stroke="#06effe" stroke-width="3" stroke-dasharray="5 5">
+              <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite" />
+            </path>
+            <circle cx="100" cy="100" r="15" fill="#00d9ff" class="svg-glow"/>
+            <circle cx="400" cy="100" r="15" fill="#0c7bf4" class="svg-glow"/>
+            <circle cx="100" cy="400" r="15" fill="#06effe" class="svg-glow"/>
+            <circle cx="400" cy="400" r="15" fill="#00d9ff" class="svg-glow"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="mini-title" data-i18n="plat.offer_label">O QUE A PLATAFORMA OFERECE</span>
+      </div>
+      <div class="grid-3">
+        <div class="feature-card-v reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff; margin-bottom: 8px;"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+          <h3 data-i18n="plat.offer_1_title">Orquestrador Visual No-Code</h3>
+          <p data-i18n="plat.offer_1_desc">Crie fluxos de decisão complexos de forma visual, sem código, com total agilidade.</p>
+        </div>
+        <div class="feature-card-v reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff; margin-bottom: 8px;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          <h3 data-i18n="plat.offer_2_title">Integração de APIs, Dados e Modelos</h3>
+          <p data-i18n="plat.offer_2_desc">Conectec qualquer fonte de dados, API ou modelo de IA ao fluxo de decisão de forma segura.</p>
+        </div>
+        <div class="feature-card-v reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff; margin-bottom: 8px;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          <h3 data-i18n="plat.offer_3_title">Simulação e Backtesting</h3>
+          <p data-i18n="plat.offer_3_desc">Teste decisões com dados históricos, antecipando resultados e reduzindo riscos.</p>
+        </div>
+        <div class="feature-card-v reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff; margin-bottom: 8px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <h3 data-i18n="plat.offer_4_title">Governança e Auditoria</h3>
+          <p data-i18n="plat.offer_4_desc">Versione, audite e garanta conformidade em cada alteração realizada na plataforma.</p>
+        </div>
+        <div class="feature-card-v reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff; margin-bottom: 8px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <h3 data-i18n="plat.offer_5_title">Execução em Tempo Real</h3>
+          <p data-i18n="plat.offer_5_desc">Motor de decisão ultrarrápido com latência inferior a 100 milissegundos.</p>
+        </div>
+        <div class="feature-card-v reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff; margin-bottom: 8px;"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <h3 data-i18n="plat.offer_6_title">Conectores Nativos</h3>
+          <p data-i18n="plat.offer_6_desc">Integrações prontas com bureaus, provedores de identidade, pagamentos e ecossistema financeiro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="margin-bottom: 100px;">
+        <span class="mini-title" data-i18n="plat.how_label">COMO FUNCIONA</span>
+        <div class="steps-horizontal">
+          <div class="step-v">
+            <span class="step-num">01</span>
+            <h4 data-i18n="plat.how_1_title">Conecte</h4>
+            <p data-i18n="plat.how_1_desc">Conecte fontes de dados, APIs e modelos ao orquestrador visual.</p>
+          </div>
+          <div class="step-v">
+            <span class="step-num">02</span>
+            <h4 data-i18n="plat.how_2_title">Modele</h4>
+            <p data-i18n="plat.how_2_desc">Monte regras, políticas e estratégias de decisão com componentes reutilizáveis.</p>
+          </div>
+          <div class="step-v">
+            <span class="step-num">03</span>
+            <h4 data-i18n="plat.how_3_title">Simule</h4>
+            <p data-i18n="plat.how_3_desc">Execute simulações e valide resultados com dados históricos antes de publicar.</p>
+          </div>
+          <div class="step-v">
+            <span class="step-num">04</span>
+            <h4 data-i18n="plat.how_4_title">Execute</h4>
+            <p data-i18n="plat.how_4_desc">Coloque em produção e tome decisões em tempo real com máxima performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div style="text-align: center; margin-bottom: 48px;">
+          <span class="mini-title" data-i18n="plat.ben_label">BENEFÍCIOS PARA SUA INSTITUIÇÃO</span>
+        </div>
+        <div class="benefits-horizontal">
+          <div class="benefit-item-v">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #00d9ff; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-i18n="plat.ben_1">Redução de fraudes e perdas financeiras</p>
+          </div>
+          <div class="benefit-item-v">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #00d9ff; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-i18n="plat.ben_2">Menos falsos positivos e retrabalho</p>
+          </div>
+          <div class="benefit-item-v">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #00d9ff; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-i18n="plat.ben_3">Agilidade para criar e ajustar estratégias</p>
+          </div>
+          <div class="benefit-item-v">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #00d9ff; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-i18n="plat.ben_4">Visão unificada de risco e comportamento</p>
+          </div>
+          <div class="benefit-item-v">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #00d9ff; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-i18n="plat.ben_5">Conformidade, rastreabilidade e controle total</p>
+          </div>
+          <div class="benefit-item-v">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #00d9ff; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-i18n="plat.ben_6">Escalabilidade para milhões de decisões por segundo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logob.png" alt="DecisionAI OS">
+        <p data-i18n="footer.copy">© 2026 DecisionAI OS. Todos os direitos reservados.</p>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.nav_title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+          <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+          <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+          <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+          <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.social_title">Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter / X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

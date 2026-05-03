@@ -49,21 +49,23 @@ index.html
     <div class="container nav">
 
       <!-- LOGO -->
-      <a href="#home" class="logo">
+      <a href="index.html" class="logo">
         <img src="assets/logo.png" alt="DecisionAI OS">
       </a>
 
       <!-- MENU -->
       <ul class="menu" id="menu">
-        <li><a href="#home" data-i18n="nav.home">Home</a></li>
-        <li><a href="#stats" data-i18n="nav.platform">Plataforma</a></li>
-        <li><a href="#problem" data-i18n="nav.problem">Problema</a></li>
-        <li><a href="#paradigm" data-i18n="nav.architecture">Arquitetura</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+        <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+        <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+        <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+        <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
       </ul>
 
       <!-- DIREITA -->
       <div class="nav-right">
+        <a href="#contact" class="btn-small" data-i18n="nav.demo">Solicitar demonstração →</a>
 
         <!-- LANG SELECT -->
         <div class="lang-switch" id="langSwitch">
@@ -74,8 +76,11 @@ index.html
               <circle cx="320" cy="240" r="80" fill="#002776" />
               <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
             </svg>
-            <span id="langLabelActive">PT</span>
-            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span id="langLabelActive">PT-BR</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
           <ul class="lang-dropdown" id="langDropdown">
             <li>
@@ -473,64 +478,56 @@ index.html
         <div class="form-result" id="formResult" role="alert" aria-live="polite"></div>
 
       </form>
-
     </div>
-
   </section>
 
-
-  <!-- FOOTER -->
-  <footer>
-
-    <div class="footer-social">
-
-      <p data-i18n="footer.social">Nos siga também nas redes sociais</p>
-
-      <div class="social-icons">
-
-        <a href="#" target="_blank" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-          </svg>
-        </a>
-
-        <a href="#" target="_blank" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
-            <circle cx="4" cy="4" r="2" />
-          </svg>
-        </a>
-
-        <a href="#" target="_blank" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round" />
-          </svg>
-        </a>
-
-        <a href="#" target="_blank" aria-label="Twitter / X">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
-
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logob.png" alt="DecisionAI OS">
+        <p data-i18n="footer.copy">© 2026 DecisionAI OS. Todos os direitos reservados.</p>
       </div>
-
+      <div>
+        <h4 class="footer-title" data-i18n="footer.nav_title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+          <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+          <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+          <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+          <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.social_title">Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter / X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div class="container foot">
-
-      <img src="assets/logob.png" alt="DecisionAI OS">
-
-      <p data-i18n="footer.copy">© 2026 DecisionAI OS</p>
-
-    </div>
-
   </footer>
-
 
   <script src="script.js"></script>
 </body>

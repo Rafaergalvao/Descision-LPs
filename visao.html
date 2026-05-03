@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="icon" href="assets/fav.png" type="image/png">
+  <link rel="shortcut icon" href="assets/fav.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/fav.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visão DecisionAI OS - O futuro da inteligência de decisão.">
+  <title>Visão | DecisionAI OS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="particles"></div>
+
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DecisionAI OS">
+      </a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+        <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+        <li><a href="visao.html" class="active" data-i18n="nav.vision">Visão</a></li>
+        <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn-small" data-i18n="nav.demo">Solicitar demonstração →</a>
+        
+        <!-- LANG SELECT -->
+        <div class="lang-switch" id="langSwitch">
+          <button type="button" class="lang-toggle" id="langToggle">
+            <svg class="lang-flag" id="langFlagActive" viewBox="0 0 640 480" width="22" height="16">
+              <rect width="640" height="480" fill="#009b3a" />
+              <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+              <circle cx="320" cy="240" r="80" fill="#002776" />
+              <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+            </svg>
+            <span id="langLabelActive">PT</span>
+            <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li>
+              <button type="button" class="lang-option active" data-lang="pt">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#009b3a" />
+                  <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00" />
+                  <circle cx="320" cy="240" r="80" fill="#002776" />
+                  <path d="M230,240 Q320,180 410,240 Q320,220 230,240Z" fill="#fff" />
+                </svg>
+                <span>PT-BR</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="en">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#bd3d44" />
+                  <rect y="37" width="640" height="37" fill="#fff" />
+                  <rect y="111" width="640" height="37" fill="#fff" />
+                  <rect y="185" width="640" height="37" fill="#fff" />
+                  <rect y="259" width="640" height="37" fill="#fff" />
+                  <rect y="333" width="640" height="37" fill="#fff" />
+                  <rect y="407" width="640" height="37" fill="#fff" />
+                  <rect width="260" height="260" fill="#192f5d" />
+                </svg>
+                <span>EN</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="es">
+                <svg viewBox="0 0 640 480" width="22" height="16">
+                  <rect width="640" height="480" fill="#c60b1e" />
+                  <rect y="120" width="640" height="240" fill="#ffc400" />
+                </svg>
+                <span>ES</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamb" id="hamb" aria-label="Menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-hero section">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1 data-i18n="vis.hero_title">Construindo a Decision Intelligence Network.</h1>
+        <p data-i18n="vis.hero_desc">Nossa visão é criar um ecossistema financeiro onde cada transação é protegida e cada decisão é inteligente, justa e em tempo real.</p>
+        <div class="hero-btns">
+          <a href="index.html#contact" class="btn" data-i18n="nav.demo">Solicitar demonstração →</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="hero-svg-container">
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 400C150 400 100 300 250 300C400 300 350 200 450 200" stroke="#00d9ff" stroke-width="4" stroke-dasharray="8 8" class="svg-glow"/>
+            <line x1="450" y1="200" x2="450" y2="120" stroke="#06effe" stroke-width="6" class="svg-glow"/>
+            <path d="M450 120L380 150L450 180V120Z" fill="#0c7bf4" class="svg-glow">
+              <animate attributeName="d" values="M450 120L380 150L450 180V120Z; M450 120L400 140L450 180V120Z; M450 120L380 150L450 180V120Z" dur="3s" repeatCount="indefinite" />
+            </path>
+            <circle cx="250" cy="300" r="8" fill="#06effe" class="svg-glow"/>
+            <circle cx="50" cy="400" r="10" fill="#00d9ff" class="svg-glow"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="mini-title" data-i18n="vis.pilar_label">NOSSOS PILARES</span>
+        <h2 data-i18n="vis.pilar_title">O que nos move na direção do futuro financeiro global.</h2>
+      </div>
+
+      <div class="pilar-vertical">
+        <div class="pilar-item reveal">
+          <div class="pilar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div class="pilar-text">
+            <h3 data-i18n="vis.p1_title">Democratização da Inteligência</h3>
+            <p data-i18n="vis.p1_desc">Tornar tecnologias de ponta acessíveis para instituições de todos os tamanhos.</p>
+          </div>
+        </div>
+
+        <div class="pilar-item reveal">
+          <div class="pilar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+          </div>
+          <div class="pilar-text">
+            <h3 data-i18n="vis.p2_title">Inteligência Compartilhada</h3>
+            <p data-i18n="vis.p2_desc">Sinais, padrões e indicadores são compartilhados de forma segura e anonimizada.</p>
+          </div>
+        </div>
+
+        <div class="pilar-item reveal">
+          <div class="pilar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: #00d9ff;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          </div>
+          <div class="pilar-text">
+            <h3 data-i18n="vis.p3_title">Ética e Transparência</h3>
+            <p data-i18n="vis.p3_desc">Garantir que cada decisão da IA seja explicável, justa e ética.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="mini-title" data-i18n="vis.timeline_label">NOSSA JORNADA</span>
+      </div>
+      <div class="timeline-horizontal">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">2024</span>
+          <h3 data-i18n="vis.t1_title">Lançamento do DecisionAI OS</h3>
+          <p data-i18n="vis.t1_desc">Consolidação da infraestrutura central de decisão.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">2025</span>
+          <h3 data-i18n="vis.t2_title">Expansão Global</h3>
+          <p data-i18n="vis.t2_desc">Conexão com os principais hubs financeiros mundiais.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">2026</span>
+          <h3 data-i18n="vis.t3_title">Decision Intelligence Network</h3>
+          <p data-i18n="vis.t3_desc">O futuro das decisões financeiras descentralizadas e inteligentes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logob.png" alt="DecisionAI OS">
+        <p data-i18n="footer.copy">© 2026 DecisionAI OS. Todos os direitos reservados.</p>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.nav_title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="plataforma.html" data-i18n="nav.platform">Plataforma</a></li>
+          <li><a href="capacidades.html" data-i18n="nav.capabilities">Capacidades</a></li>
+          <li><a href="arquitetura.html" data-i18n="nav.architecture">Arquitetura</a></li>
+          <li><a href="visao.html" data-i18n="nav.vision">Visão</a></li>
+          <li><a href="empresa.html" data-i18n="nav.company">Empresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title" data-i18n="footer.social_title">Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#020611" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#020611" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter / X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
